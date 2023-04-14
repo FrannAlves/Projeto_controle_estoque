@@ -1,7 +1,7 @@
 lista_produtos = []
 
 
-#----------------------------------------COMEÇO DA FUNÇAO CADASTRAR_PRODUT0----------------------------------------
+#----------------------------------------COMEÇO DA FUNÇAO CADASTRAR_PRODUTO----------------------------------------
 
 def cadastrar_produto(codigo):#funçao q permite o usuario cadastrar um produto
     print('Bem vindo ao cadastro de Produtos')
@@ -14,9 +14,9 @@ def cadastrar_produto(codigo):#funçao q permite o usuario cadastrar um produto
                     'fabricante': fabricante,
                     'preço'     : valor}
     lista_produtos.append(dic_produtos.copy())#colocando o dicionari dentro da lista
-#----------------------------------------FIM DA FUNÇAO CADASTRAR_PRODUT0-------------------------------------------
+#----------------------------------------FIM DA FUNÇAO CADASTRAR_PRODUTO-------------------------------------------
 
-#----------------------------------------COMEÇO DA FUNÇAO CONSULTAR_PRODUT0----------------------------------------
+#----------------------------------------COMEÇO DA FUNÇAO CONSULTAR_PRODUTO----------------------------------------
 
 def consultar_produto():#funçao para consultar os produtos que foram cadastrados
     while True:
@@ -50,9 +50,9 @@ def consultar_produto():#funçao para consultar os produtos que foram cadastrado
         except ValueError:
             print('Pare de digitar numeros não inteiros')
 
-#----------------------------------------FIM DA FUNÇAO CONSULTAR_PRODUT0------------------------------------------
+#----------------------------------------FIM DA FUNÇAO CONSULTAR_PRODUTO------------------------------------------
 
-#----------------------------------------COMEÇO DA FUNÇAO REMOVER_PRODUT0------------------------------------------
+#----------------------------------------COMEÇO DA FUNÇAO REMOVER_PRODUTO------------------------------------------
 
 def remover_produto():
     print('Bem vindo ao remover Produto')
@@ -61,7 +61,7 @@ def remover_produto():
         if (produto['codigo'] == entrada):#o produto que tiver o codigo igual ao digitado sera removido da lista
             lista_produtos.remove(produto)
 
-#-------------------------------------------FIM DA FUNÇAO REMOVER_PRODUT0------------------------------------------
+#-------------------------------------------FIM DA FUNÇAO REMOVER_PRODUTO------------------------------------------
 
 
 
